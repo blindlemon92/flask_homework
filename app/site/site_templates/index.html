@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="bg-dark mt-5 p-5">
+    <div class="bg- dark p-5">
+        <h1 class="text-secondary text-center">The Indy Auto Index</h1>
+        <h2 class="text-center text-primary"><hr>Welcome to the "best-kept-secret" vehicle resource online!<strong></strong></h2>
+        <div class="mx-5">
+            <h4 class="text-light p-5 m-5">You're looking for a car, or a truck, or maybe neither.... either way, look no-further than the
+                Indy Auto Index.<br> Founded roughly 25 mins ago the IAI is dedicated to helping me nail my homework, while simultaneously, providing you with
+                useless (and possibly false) information about vehicles.  
+            </h4>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary mx-5"><a class="text-light" style="text-decoration: none;" href="{{ url_for('auth.signin') }}">Sign In</a></button>
+        <button type="button" class="btn btn-primary mx-5"><a class="text-light" style="text-decoration: none;" href="{{ url_for('auth.signup') }}">Sign Up</a></button>
+    </div>
+</section>
+
+{% endblock %}
